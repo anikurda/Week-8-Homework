@@ -1,0 +1,175 @@
+.tasks {
+    margin-bottom: 100px;
+}
+
+/* Task 1 */
+.container1 {
+    width: 800px;
+    height: 400px;
+    background-color: pink;
+    padding: 150px 200px
+}
+
+button {
+    width: 400px;
+    height: 100px;
+    background-color: pink;
+    border-radius: 40px;
+    border: none;
+    font-size: 25px;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    box-shadow: 5px 5px 7px black, 3px 3px 5px white inset;
+}
+
+button:active {
+    box-shadow: 5px 5px 7px black inset, -3px -3px 5px white inset;
+    text-shadow: 1px 1px 3px black;
+}
+
+/* Task 2 */
+.container2 {
+    width: 400px;
+    padding: 40px;
+    margin-left: 20px;
+    border: none;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+
+.task2_img {
+    width: 300px;
+    margin-bottom: 30px;
+    transition-property: border-radius;
+    transition-duration: 1s;
+}
+
+.container2:hover {
+    box-shadow: 0px 0px 10px green;
+    border-radius: 15px;
+}
+
+.task2_img:hover {
+    border-radius: 15px 15px 0 0;
+}
+
+
+/* Task 3 */
+.container3 {
+    width: 800px;
+    height: 400px;
+    padding: 150px;
+    border: solid;
+
+}
+
+
+.task3_text {
+    font-size: 140px;
+    color: red;
+    letter-spacing: 20px;
+    animation: task3text 0.5s linear 0s infinite;
+}
+
+@keyframes task3text {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Task 4 */
+.container4 {
+    width: 800px;
+    height: 400px;
+    padding: 50px 200px;
+    border: solid;
+}
+
+.task4_text {
+    font-size: 50px;
+    text-align: center;
+    color: green;
+    margin-top: 80px;
+    position: absolute;
+    margin-left: 100px;
+}
+
+.task4_box {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 2rem solid;
+    border-radius: 50%;
+    border-color: green green yellow red;
+    animation: spinner 1s linear 0s infinite;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.task4_box:hover {
+    animation-play-state: paused;
+}
+
+/* Task 5 */
+.container5 {
+    background-color: rgba(20, 117, 20, 0.386);
+    padding: 20px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav_text {
+    font-size: 60px;
+    color: beige;
+    text-shadow: 2px 2px 2px black;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.nav_text:hover {
+    text-shadow: 1px 1px 20px rgb(255, 46, 231);
+}
+
+/* Task 6 */
+.container6 {
+    width: 600px;
+    height: 50px;
+    border: solid;
+    margin: auto;
+}
+
+.task6_bar {
+    height: 100%;
+    background-color: rgb(130, 130, 255);
+    animation: bar 15s ease 0s 1;
+}
+
+@keyframes bar {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
